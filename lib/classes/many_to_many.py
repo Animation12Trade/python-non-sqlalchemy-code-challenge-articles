@@ -1,3 +1,4 @@
+# Comment on the three models
 class Author:
     _all = []
 
@@ -30,6 +31,7 @@ class Author:
 class Magazine:
     _all = []
 
+    # Initialize the magazine by giving it a name and it must be in str
     def __init__(self, name, category):
         if not isinstance(name, str) or not (2 <= len(name) <= 16):
             raise ValueError("Name must be a string between 2 and 16 characters")
